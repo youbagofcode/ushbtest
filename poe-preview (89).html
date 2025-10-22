@@ -1,0 +1,3431 @@
+<!DOCTYPE html><html lang="en"><head><meta name="x-poe-datastore-behavior" content="local_only"><meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' data: blob: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://code.jquery.com https://unpkg.com https://d3js.org https://threejs.org https://cdn.plot.ly https://stackpath.bootstrapcdn.com https://maps.googleapis.com https://cdn.tailwindcss.com https://ajax.googleapis.com https://kit.fontawesome.com https://cdn.datatables.net https://maxcdn.bootstrapcdn.com https://code.highcharts.com https://tako-static-assets-production.s3.amazonaws.com https://www.youtube.com https://fonts.googleapis.com https://fonts.gstatic.com https://pfst.cf2.poecdn.net https://puc.poecdn.net https://i.imgur.com https://wikimedia.org https://*.icons8.com https://*.giphy.com https://picsum.photos https://images.unsplash.com; frame-src 'self' https://www.youtube.com https://trytako.com; child-src 'self'; manifest-src 'self'; worker-src 'self'; upgrade-insecure-requests; block-all-mixed-content;">
+     <!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-11426860405">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11426860405');
+</script>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K4WVK7W6');</script>
+<!-- End Google Tag Manager -->
+     
+    <script>
+        // Check if we're using file:// protocol and handle paths
+        (function() {
+            if (window.location.protocol === 'file:') {
+                // Extract the path portion from URL (everything after the last /)
+                const path = window.location.pathname;
+                const fileName = path.substring(path.lastIndexOf('/')+1);
+                
+                // If not the index file or 404 file, redirect to 404.html
+                if (fileName !== 'index.html' && fileName !== '' && fileName !== '404.html') {
+                    window.location.href = '404.html';
+                }
+            }
+        })();
+    </script>
+    <!-- Rest of your head content -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USHomeBuyers | Get a Cash Offer Today</title>
+    
+    <!-- Favicon - using local image -->
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <!-- For Apple devices -->
+    <link rel="apple-touch-icon" href="images/favicon.png">
+
+          <meta name="description" content="Sell your Arizona home fast for cash! USHomeBuyers provides guaranteed cash offers in Phoenix, Scottsdale, Tucson, Mesa and throughout AZ. No repairs, no realtors, no commissions - close in as little as 7 days. Perfect for inherited properties, foreclosures, divorces, and FSBO situations. Get your fair cash offer today!">
+    
+    <style>
+        :root {
+            --primary: #2c6bed;
+            --secondary: #34c759;
+            --accent: #ff9500;
+            --dark: #333;
+            --gray: #666;
+            --light-gray: #f5f6f7;
+            --border: #e0e0e0;
+            --white: #fff;
+            --shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+            --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            --map-blue: #4285f4;
+            --map-blue-hover: #2a75f3;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: var(--font);
+        }
+        
+        body {
+            color: var(--dark);
+            line-height: 1.6;
+            background-color: var(--white);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: var(--white);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+        
+        .logo-image {
+            height: 55px;
+            width: auto;
+            margin-right: 10px;
+        }
+        
+        .logo-text {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        .nav-links {
+            display: flex;
+            align-items: center;
+        }
+        
+        .nav-link {
+            margin-left: 30px;
+            text-decoration: none;
+            color: var(--gray);
+            font-weight: 500;
+            font-size: 15px;
+            transition: color 0.2s;
+            cursor: pointer;
+        }
+        
+        .nav-link:hover {
+            color: var(--primary);
+        }
+        
+        .nav-link.sign-in {
+            margin-left: 40px;
+        }
+        
+        .mobile-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: var(--gray);
+        }
+        
+        .hero {
+            padding: 80px 0;
+            background: linear-gradient(to bottom, #ffffff, #f8f9fd);
+        }
+        
+        .hero-container {
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+        }
+        
+        .hero-content {
+            flex: 6;
+        }
+        
+        .hero-title {
+            font-size: 3.5rem;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            color: var(--dark);
+            font-weight: 800;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: var(--gray);
+        }
+        
+        .hero-image {
+            flex: 5;
+            position: relative;
+        }
+        
+        .slideshow {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            min-height: 400px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        
+        .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            z-index: 1;
+        }
+        
+        .slide.active {
+            opacity: 1;
+            z-index: 2;
+        }
+        
+        .hero-image-container {
+            width: 100%;
+            height: 100%;
+            min-height: 400px;
+        }
+        
+        .house-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .offer-bubble {
+            position: absolute;
+            background-color: var(--white);
+            border-radius: 50px;
+            padding: 10px 20px;
+            box-shadow: var(--shadow);
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            font-weight: 600;
+            z-index: 10;
+            top: 15%;
+            left: 10%;
+        }
+        
+        .profile-bubble {
+            position: absolute;
+            background-color: var(--white);
+            border-radius: 16px;
+            padding: 15px;
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 10;
+            bottom: 15%;
+            right: 10%;
+            max-width: 180px;
+        }
+        
+        .profile-headshot {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid var(--primary);
+            margin-bottom: 10px;
+        }
+        
+        .profile-headshot img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .profile-text {
+            text-align: center;
+            font-size: 13px;
+            line-height: 1.3;
+        }
+        
+        .profile-name {
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 2px;
+        }
+        
+        .profile-title {
+            color: var(--gray);
+            font-size: 12px;
+        }
+        
+        .avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            color: var(--white);
+            background-color: var(--primary);
+            overflow: hidden;
+        }
+        
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .slideshow-dots {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 8px;
+            z-index: 10;
+        }
+        
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .dot.active {
+            background-color: var(--white);
+        }
+        
+        .hero-form {
+            background-color: var(--white);
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+            max-width: 500px;
+            margin-top: 20px;
+        }
+        
+        .form-progress {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 25px;
+            position: relative;
+        }
+        
+        .progress-step {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #e9ecef;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            color: #6c757d;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .progress-step.active {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .progress-step.completed {
+            background-color: var(--secondary);
+            color: white;
+        }
+        
+        .progress-line {
+            position: absolute;
+            top: 15px;
+            left: 30px;
+            right: 30px;
+            height: 2px;
+            background-color: #e9ecef;
+            z-index: 1;
+        }
+        
+        .progress-line-fill {
+            height: 100%;
+            background-color: var(--secondary);
+            width: 0%;
+            transition: width 0.3s;
+        }
+        
+        .step-title {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--dark);
+        }
+        
+        .form-step {
+            width: 100%;
+        }
+        
+        .form-step.hidden {
+            display: none;
+        }
+        
+        .form-step-1 {
+            display: flex;
+            align-items: stretch;
+            gap: 10px;
+        }
+        
+        .form-step-1 .form-group {
+            margin-bottom: 0;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+            width: 100%;
+            position: relative;
+        }
+        
+        .form-group label {
+            display: block;
+            text-align: left;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--dark);
+        }
+        
+        .form-control {
+            height: 50px;
+            width: 100%;
+            padding: 14px 16px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(43, 98, 214, 0.15);
+        }
+        
+        .pac-container {
+            border-radius: 8px;
+            margin-top: 5px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+            font-family: var(--font);
+            z-index: 1050 !important;
+        }
+        
+        .pac-item {
+            padding: 10px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        
+        .pac-item:hover {
+            background-color: var(--light-gray);
+        }
+        
+        .pac-item-selected {
+            background-color: var(--light-gray);
+        }
+        
+        .pac-matched {
+            font-weight: bold;
+        }
+        
+        .pac-item-query {
+            font-size: 14px;
+            color: var(--dark);
+        }
+        
+        .gmpx-autocomplete {
+            width: 100%;
+            margin-bottom: 0;
+            font-family: var(--font);
+        }
+        
+        .gmpx-autocomplete input {
+            width: 100%;
+            padding: 14px 16px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+            font-family: var(--font);
+        }
+        
+        .gmpx-autocomplete input:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(43, 98, 214, 0.15);
+        }
+
+        .gmpx-autocomplete-dropdown {
+            border-radius: 8px;
+            margin-top: 5px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+            z-index: 1050 !important;
+        }
+        
+        .address-btn, .submit-btn, .cta-offer-btn {
+            color: white;
+            border: none;
+            padding: 14px 25px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            white-space: nowrap;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: var(--shadow);
+        }
+        
+        .address-btn {
+            background-color: var(--map-blue);
+            height: 50px;
+            min-width: 120px;
+        }
+        
+        .address-btn:hover {
+            background-color: var(--map-blue-hover);
+            transform: translateY(-2px);
+        }
+        
+        .submit-btn {
+            background-color: var(--secondary);
+            width: 100%;
+            margin-top: 10px;
+            height: 50px;
+        }
+        
+        .submit-btn:hover {
+            background-color: #2aa44f;
+            transform: translateY(-2px);
+        }
+        
+        .cta-offer-btn {
+            background-color: var(--map-blue);
+            margin-top: 10px;
+        }
+        
+        .cta-offer-btn:hover {
+            background-color: var(--map-blue-hover);
+            transform: translateY(-2px);
+        }
+        
+        .trusted-by {
+            text-align: center;
+            padding: 50px 0;
+            background-color: var(--white);
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .trusted-label {
+            font-size: 14px;
+            color: var(--gray);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .trusted-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+        
+        .trusted-logo {
+            height: 30px;
+            width: auto;
+            margin-bottom: 15px;
+        }
+        
+        .section {
+            padding: 80px 0;
+        }
+        
+        .section.light {
+            background-color: var(--light-gray);
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: var(--gray);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            background-color: var(--primary);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        .feature-card h3 {
+            margin-bottom: 15px;
+            color: var(--dark);
+            font-size: 1.3rem;
+        }
+        
+        .two-columns {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            margin: 80px 0;
+        }
+        
+        .column {
+            flex: 1;
+        }
+        
+        .column-title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .column-text {
+            font-size: 1.1rem;
+            color: var(--gray);
+            margin-bottom: 30px;
+        }
+        
+        .image-container {
+            width: 100%;
+            height: 400px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        
+        .benefit-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+        
+        .benefit-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        
+        .benefit-card h3 {
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+
+        /* Enhanced Map Section - MUCH MORE ZOOMED IN, More Transparent, Nicer Bubbles, Statewide Coverage */
+        .map-section {
+            padding: 0;
+            position: relative;
+            height: 700px;
+            overflow: hidden;
+            margin-top: 40px;
+            background: linear-gradient(135deg, #0f1419 0%, #1a2332 100%);
+        }
+
+        .map-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        #serviceMap {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            filter: brightness(0.9) contrast(1.15);
+        }
+
+        /* Much more transparent overlay - 60-65% opacity */
+        .map-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            z-index: 10;
+            width: 100%;
+            max-width: 700px;
+            padding: 50px 45px;
+            background: linear-gradient(135deg, 
+                rgba(66, 133, 244, 0.60) 0%, 
+                rgba(42, 117, 243, 0.63) 50%,
+                rgba(26, 86, 224, 0.60) 100%);
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4),
+                        0 0 0 1px rgba(255, 255, 255, 0.08) inset;
+            pointer-events: none;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .map-overlay::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, 
+                rgba(255, 255, 255, 0.06) 0%, 
+                transparent 50%,
+                rgba(0, 0, 0, 0.06) 100%);
+            border-radius: 24px;
+            pointer-events: none;
+        }
+
+        .map-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+            color: white;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            letter-spacing: -0.5px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .map-subtitle {
+            font-size: 2.2rem;
+            font-weight: 300;
+            margin-top: 0;
+            margin-bottom: 30px;
+            color: rgba(255, 255, 255, 0.98);
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            font-style: italic;
+            position: relative;
+            z-index: 1;
+        }
+
+        .map-description {
+            font-size: 1.25rem;
+            line-height: 1.8;
+            margin-bottom: 40px;
+            color: rgba(255, 255, 255, 0.97);
+            font-weight: 400;
+            position: relative;
+            z-index: 1;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .map-cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            color: var(--primary);
+            padding: 18px 45px;
+            border-radius: 50px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35),
+                        0 0 0 1px rgba(255, 255, 255, 0.2);
+            pointer-events: all;
+            font-size: 1.2rem;
+            position: relative;
+            z-index: 1;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .map-cta-button:hover {
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.45),
+                        0 0 0 1px rgba(255, 255, 255, 0.3);
+            background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
+        }
+
+        /* Nicer, cleaner animated bubbles with single descriptive words */
+        @keyframes bubbleFadeIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.85) translateY(10px);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+
+        @keyframes bubbleFadeOut {
+            0% {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+            100% {
+                opacity: 0;
+                transform: scale(0.85) translateY(-10px);
+            }
+        }
+
+        @keyframes bubbleFloat {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-4px);
+            }
+        }
+
+        /* Premium custom info window styling */
+        .gm-style .gm-style-iw-c {
+            padding: 0 !important;
+            border-radius: 14px !important;
+            box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3) !important;
+            border: none !important;
+            max-width: 160px !important;
+        }
+
+        .gm-style .gm-style-iw-d {
+            overflow: hidden !important;
+        }
+
+        .gm-style .gm-style-iw-t::after {
+            background: white !important;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+        }
+
+        .gm-style button[aria-label="Close"] {
+            display: none !important;
+        }
+
+        .custom-info-window {
+            padding: 18px 22px;
+            background: white;
+            border-radius: 14px;
+            min-width: 120px;
+            text-align: center;
+            animation: bubbleFloat 3s ease-in-out infinite;
+        }
+
+        .custom-info-window .price {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--map-blue);
+            margin-bottom: 6px;
+            letter-spacing: -0.5px;
+        }
+
+        .custom-info-window .label {
+            font-size: 11px;
+            color: #5f6368;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 10px;
+        }
+
+        .custom-info-window .deal-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--secondary) 0%, #2aa44f 100%);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 14px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            box-shadow: 0 2px 8px rgba(52, 199, 89, 0.35);
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .testimonial-card {
+            background-color: var(--white);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+        
+        .testimonial-content {
+            font-style: italic;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--light-gray);
+            color: var(--primary);
+            font-weight: 700;
+            overflow: hidden;
+        }
+        
+        .author-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .author-info h4 {
+            margin-bottom: 5px;
+            color: var(--dark);
+        }
+        
+        .author-info p {
+            color: var(--gray);
+        }
+        
+        .faq-section {
+            padding: 80px 0;
+            background-color: var(--light-gray);
+        }
+        
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            margin-bottom: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--dark);
+        }
+        
+        .faq-answer {
+            padding: 0 20px 20px;
+            display: none;
+        }
+        
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+        
+        .cta-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, var(--primary) 0%, #1a56e0 100%);
+            color: white;
+            text-align: center;
+        }
+        
+        .cta-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .cta-text {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: white;
+            color: var(--primary);
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            text-decoration: none;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: var(--shadow);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 80px 0 30px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+        
+        .footer-col h3 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: white;
+        }
+        
+        .footer-col ul {
+            list-style: none;
+        }
+        
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-col a {
+            text-decoration: none;
+            color: #adb5bd;
+            transition: color 0.2s;
+        }
+        
+        .footer-col a:hover {
+            color: white;
+        }
+        
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 30px;
+            border-top: 1px solid #495057;
+            color: #adb5bd;
+        }
+        
+        .social-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #adb5bd;
+            transition: color 0.2s;
+        }
+        
+        .social-links a:hover {
+            color: white;
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            align-items: center;
+            justify-content: center;
+            overflow-y: auto;
+            padding: 20px 0;
+        }
+        
+        .modal-content {
+            background-color: white;
+            width: 90%;
+            max-width: 500px;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            position: relative;
+            animation: modalopen 0.4s;
+            margin: auto;
+        }
+        
+        @keyframes modalopen {
+            from {opacity: 0; transform: translateY(-30px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+        
+        .close-modal {
+            position: absolute;
+            right: 20px;
+            top: 15px;
+            font-size: 24px;
+            cursor: pointer;
+            color: #adb5bd;
+            transition: color 0.3s;
+            z-index: 5;
+        }
+        
+        .close-modal:hover {
+            color: var(--dark);
+        }
+        
+        .success-icon {
+            font-size: 50px;
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+        
+        .modal-progress {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            margin-bottom: 25px;
+            max-width: 350px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .modal-step {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #e9ecef;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .modal-step.active {
+            background-color: var(--primary);
+        }
+        
+        .modal-step.completed {
+            background-color: var(--secondary);
+        }
+        
+        .modal-progress-line {
+            position: absolute;
+            top: 5px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background-color: #e9ecef;
+            z-index: 1;
+        }
+        
+        .modal-progress-fill {
+            height: 100%;
+            background-color: var(--secondary);
+            width: 0%;
+            transition: width 0.3s;
+        }
+        
+        .modal-header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        
+        .modal-header h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .modal-header p {
+            color: var(--gray);
+        }
+        
+        .modal-form-step {
+            display: none;
+            animation: fadeIn 0.5s;
+        }
+        
+        .modal-form-step.active {
+            display: block;
+        }
+        
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+        
+        .radio-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .radio-option {
+            flex: 1 0 calc(50% - 10px);
+            min-width: 120px;
+        }
+        
+        .radio-option input[type="radio"] {
+            display: none;
+        }
+        
+        .radio-option label {
+            display: block;
+            padding: 12px 15px;
+            background-color: var(--light-gray);
+            border-radius: 8px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 500;
+            border: 2px solid transparent;
+        }
+        
+        .radio-option input[type="radio"]:checked + label {
+            background-color: rgba(44, 107, 237, 0.1);
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+        
+        .modal-nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        
+        .modal-prev-btn,
+        .modal-next-btn,
+        .modal-submit-btn {
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .modal-prev-btn {
+            background-color: var(--light-gray);
+            color: var(--gray);
+            border: none;
+        }
+        
+        .modal-prev-btn:hover {
+            background-color: #e0e0e0;
+        }
+        
+        .modal-next-btn,
+        .modal-submit-btn {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+        }
+        
+        .modal-next-btn:hover,
+        .modal-submit-btn:hover {
+            background-color: #2258c7;
+            transform: translateY(-2px);
+        }
+        
+        .modal-submit-btn {
+            background-color: var(--secondary);
+        }
+        
+        .modal-submit-btn:hover {
+            background-color: #2aa44f;
+        }
+        
+        .success-step {
+            text-align: center;
+        }
+        
+        .success-step .success-icon {
+            margin-bottom: 15px;
+        }
+        
+        .success-step h4 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
+        
+        .success-step p {
+            margin-bottom: 20px;
+        }
+        
+        .error-message {
+            color: #e74c3c;
+            background-color: #fdecea;
+            border: 1px solid #f5b7b1;
+            padding: 10px 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            font-size: 14px;
+            display: none;
+        }
+
+        .sticky-toolbar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+            padding: 15px 0;
+            z-index: 99;
+            transform: translateY(100%);
+            transition: transform 0.3s ease-out;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sticky-toolbar.visible {
+            transform: translateY(0);
+        }
+
+        .sticky-offer-btn {
+            background-color: var(--map-blue);
+            color: white;
+            border: none;
+            padding: 14px 30px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            border-radius: 50px;
+            box-shadow: var(--shadow);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sticky-offer-btn:hover {
+            background-color: var(--map-blue-hover);
+            transform: translateY(-2px);
+        }
+
+        /* Contact Modal Styles */
+        #contactModal .modal-content {
+            max-width: 450px;
+            text-align: center;
+        }
+
+        .contact-modal-header {
+            margin-bottom: 30px;
+        }
+
+        .contact-modal-header h3 {
+            font-size: 1.8rem;
+            color: var(--dark);
+            margin-bottom: 10px;
+        }
+
+        .contact-modal-header p {
+            color: var(--gray);
+            font-size: 1rem;
+        }
+
+        .contact-info-section {
+            margin-bottom: 30px;
+        }
+
+        .contact-call-now {
+            display: block;
+            background: linear-gradient(135deg, var(--primary) 0%, #1a56e0 100%);
+            color: white;
+            padding: 18px 30px;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-weight: 700;
+            text-decoration: none;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(44, 107, 237, 0.3);
+            transition: all 0.3s;
+        }
+
+        .contact-call-now:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(44, 107, 237, 0.4);
+        }
+
+        .contact-phone-icon {
+            margin-right: 10px;
+            font-size: 1.4rem;
+        }
+
+        .contact-divider {
+            display: flex;
+            align-items: center;
+            margin: 25px 0;
+            color: var(--gray);
+        }
+
+        .contact-divider::before,
+        .contact-divider::after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .contact-divider span {
+            padding: 0 15px;
+            font-size: 14px;
+        }
+
+        .contact-details {
+            text-align: left;
+            background-color: var(--light-gray);
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+
+        .contact-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .contact-item-icon {
+            font-size: 20px;
+            color: var(--primary);
+            margin-right: 15px;
+            margin-top: 2px;
+            min-width: 20px;
+        }
+
+        .contact-item-content {
+            flex: 1;
+        }
+
+        .contact-item-label {
+            font-size: 12px;
+            color: var(--gray);
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 3px;
+        }
+
+        .contact-item-value {
+            color: var(--dark);
+            font-size: 15px;
+        }
+
+        .contact-item-value a {
+            color: var(--dark);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .contact-item-value a:hover {
+            color: var(--primary);
+        }
+        
+        @media (max-width: 992px) {
+            .hero-title {
+                font-size: 2.8rem;
+            }
+            
+            .two-columns {
+                flex-direction: column;
+                gap: 40px;
+            }
+            
+            .image-container {
+                height: 300px;
+            }
+            
+            .map-title {
+                font-size: 3rem;
+            }
+            
+            .map-subtitle {
+                font-size: 2rem;
+            }
+        }
+        
+        @media (max-width: 900px) {
+            .logo-image {
+                height: 45px;
+            }
+            
+            .hero-container {
+                flex-direction: column;
+            }
+            
+            .hero-content, .hero-image {
+                width: 100%;
+                flex: none;
+            }
+            
+            .hero-title, .hero-subtitle {
+                text-align: center;
+            }
+            
+            .hero-image-container {
+                min-height: 300px;
+            }
+            
+            .hero-form {
+                max-width: 100%;
+            }
+            
+            .radio-options {
+                flex-direction: column;
+            }
+            
+            .radio-option {
+                flex: 1 0 100%;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero {
+                padding: 40px 0;
+            }
+            
+            .logo-image {
+                height: 40px;
+            }
+            
+            .mobile-toggle {
+                display: block;
+            }
+            
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                right: 0;
+                background: white;
+                padding: 20px;
+                flex-direction: column;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+                z-index: 100;
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .nav-link {
+                margin: 10px 0;
+            }
+            
+            .hero-title {
+                font-size: 2.3rem;
+                text-align: center;
+            }
+            
+            .hero-subtitle {
+                text-align: center;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .column-title {
+                font-size: 1.8rem;
+            }
+            
+            .cta-title {
+                font-size: 2rem;
+            }
+            
+            .form-step-1 {
+                flex-direction: column;
+            }
+            
+            .form-step-1 .form-group {
+                margin-bottom: 10px;
+            }
+            
+            .address-btn {
+                width: 100%;
+                margin-top: 0;
+            }
+            
+            .map-section {
+                height: 600px;
+            }
+
+            .map-overlay {
+                max-width: 90%;
+                padding: 35px 30px;
+            }
+            
+            .map-title {
+                font-size: 2.8rem;
+            }
+
+            .map-subtitle {
+                font-size: 1.8rem;
+            }
+            
+            .map-description {
+                font-size: 1.1rem;
+                margin-bottom: 30px;
+            }
+            
+            .trusted-logos {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+                padding: 0 15px;
+            }
+            
+            .trusted-logo {
+                height: 25px;
+                margin: 0 0 15px 0;
+                flex: 0 0 calc(50% - 20px);
+                max-width: 120px;
+                object-fit: contain;
+            }
+            
+            .modal-content {
+                padding: 25px 20px;
+            }
+            
+            .modal-nav-buttons {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .modal-prev-btn, 
+            .modal-next-btn, 
+            .modal-submit-btn {
+                width: 100%;
+                padding: 15px;
+                text-align: center;
+            }
+            
+            .modal-prev-btn {
+                order: 2;
+            }
+            
+            .modal-next-btn, 
+            .modal-submit-btn {
+                order: 1;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero {
+                padding: 30px 0;
+            }
+            
+            .logo-image {
+                height: 40px;
+            }
+            
+            .logo-text {
+                display: none;
+            }
+            
+            .hero-title {
+                font-size: 2rem;
+                text-align: center;
+                margin-top: 10px;
+            }
+            
+            .hero-subtitle {
+                text-align: center;
+                font-size: 1.1rem;
+            }
+            
+            .hero-form {
+                padding: 20px;
+            }
+            
+            .section {
+                padding: 60px 0;
+            }
+            
+            .hero-image-container {
+                min-height: 250px;
+            }
+            
+            .footer-bottom {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+            
+            .social-links a {
+                margin: 0 10px;
+            }
+            
+            .profile-bubble {
+                right: 5%;
+                bottom: 5%;
+                max-width: 160px;
+                padding: 12px;
+            }
+            
+            .profile-headshot {
+                width: 60px;
+                height: 60px;
+            }
+            
+            .profile-text {
+                font-size: 12px;
+            }
+            
+            .map-section {
+                height: 550px;
+            }
+
+            .map-overlay {
+                padding: 30px 25px;
+            }
+            
+            .map-title {
+                font-size: 2.4rem;
+            }
+            
+            .map-subtitle {
+                font-size: 1.6rem;
+            }
+            
+            .map-description {
+                font-size: 1.05rem;
+                margin-bottom: 25px;
+            }
+
+            .map-cta-button {
+                padding: 16px 32px;
+                font-size: 1.1rem;
+            }
+            
+            .trusted-logos {
+                gap: 15px;
+            }
+            
+            .trusted-logo {
+                height: 22px;
+                flex: 0 0 calc(50% - 15px);
+                max-width: 100px;
+            }
+
+            .contact-call-now {
+                font-size: 1.1rem;
+                padding: 16px 25px;
+            }
+
+            .contact-modal-header h3 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+<script src="https://puc.poecdn.net/authenticated_preview_page/syncedState.3f7572448765332f3047.js"></script></head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K4WVK7W6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="USHomeBuyers Logo" class="logo-image">
+                    <span class="logo-text"></span>
+                </a>
+              <nav class="nav-links">
+                <a href="#how-it-works" class="nav-link">How it works</a>
+                <a href="#benefits" class="nav-link">Benefits</a>
+                <a href="blogs.html" class="nav-link">Blogs</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a class="nav-link" id="contactNavLink">Contact</a>
+              </nav>
+              <button class="mobile-toggle">☰</button>
+            </div>
+        </div>
+    </header>
+    
+    <div class="sticky-toolbar" id="stickyToolbar">
+        <button class="sticky-offer-btn" id="stickyOfferBtn">Get Cash Offer</button>
+    </div>
+    
+    <div class="error-message" id="errorMessage"></div>
+    
+    <section class="hero">
+        <div class="container">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Get your offer today</h1>
+                    <p class="hero-subtitle">Get the most for your home. Enter your address below to get an offer for your home.</p>
+                    
+                    <div class="hero-form">
+                        <form id="offerForm">
+                            <div class="form-progress">
+                                <div class="progress-step active">1</div>
+                                <div class="progress-step">2</div>
+                                <div class="progress-line">
+                                    <div class="progress-line-fill"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="step-title" id="stepTitle">Enter Your Property Address</div>
+                            
+                            <div class="form-step form-step-1" id="step1">
+                                <div class="form-group">
+                                    <input type="text" id="addressInput" class="form-control" placeholder="Enter your property address" required="">
+                                </div>
+                                <button type="button" id="addressBtn" class="address-btn" onclick="goToStep2()">Get Offer</button>
+                            </div>
+                            
+                            <div class="form-step hidden" id="step2">
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" class="form-control" placeholder="Your phone number" required="">
+                                </div>
+                                <button type="submit" class="submit-btn">Get My Cash Offer</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="slideshow" id="heroSlideshow">
+                        <div class="slide active">
+                            <div class="hero-image-container">
+                                <img class="house-img" src="images/hero-slide-1.jpg" alt="Modern Home">
+                            </div>
+                            
+                            <div class="offer-bubble">
+                                <div class="avatar">+</div>
+                                <div>
+                                    <div>Highest offer</div>
+                                    <div>$452K</div>
+                                </div>
+                            </div>
+                            
+                            <div class="profile-bubble">
+                                <div class="profile-headshot">
+                                    <img src="images/profile-joan.jpg" alt="Joan Miller">
+                                </div>
+                                <div class="profile-text">
+                                    <div class="profile-name">Joan Miller</div>
+                                    <div class="profile-title">Satisfied Customer</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="slide">
+                            <div class="hero-image-container">
+                                <img class="house-img" src="images/hero-slide-2.jpg" alt="Suburban Home">
+                            </div>
+                            
+                            <div class="offer-bubble">
+                                <div class="avatar">!</div>
+                                <div>
+                                    <div>Fast closing</div>
+                                    <div>7 days</div>
+                                </div>
+                            </div>
+                            
+                            <div class="profile-bubble">
+                                <div class="profile-headshot">
+                                    <img src="images/profile-sarah.jpg" alt="Sarah Poverly">
+                                </div>
+                                <div class="profile-text">
+                                    <div class="profile-name">Sarah Poverly</div>
+                                    <div class="profile-title">Satisfied Customer</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="slide">
+                            <div class="hero-image-container">
+                                <img class="house-img" src="images/hero-slide-3.jpg" alt="Family Home">
+                            </div>
+                            
+                            <div class="offer-bubble">
+                                <div class="avatar">0%</div>
+                                <div>
+                                    <div>No commissions</div>
+                                    <div>Save 6%</div>
+                                </div>
+                            </div>
+                            
+                            <div class="profile-bubble">
+                                <div class="profile-headshot">
+                                    <img src="images/profile-robert.jpg" alt="Robert Davis">
+                                </div>
+                                <div class="profile-text">
+                                    <div class="profile-name">Robert Davis</div>
+                                    <div class="profile-title">Satisfied Customer</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="slideshow-dots">
+                            <div class="dot active" data-slide="0"></div>
+                            <div class="dot" data-slide="1"></div>
+                            <div class="dot" data-slide="2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="trusted-by">
+        <div class="container">
+            <p class="trusted-label">Featured in:</p>
+            <div class="trusted-logos">
+                <img class="trusted-logo" src="images/featured-bbb.jpg" alt="BBB A+ Rating">
+                <img class="trusted-logo" src="images/featured-time.png" alt="TIME Magazine">
+                <img class="trusted-logo" src="images/featured-phoenix.svg" alt="Phoenix New Times">
+                <img class="trusted-logo" src="images/featured-aacsb.png" alt="AACSB Accredited">
+            </div>
+        </div>
+    </div>
+    
+    <section class="section" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-subtitle">Our simple 3-step process makes selling your home quick and hassle-free</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">1</div>
+                    <h3>Request an Offer</h3>
+                    <p>Enter your property address and phone number. It takes less than a minute to get started with our simple process.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">2</div>
+                    <h3>Get Your Offer</h3>
+                    <p>We'll analyze your property and contact you within 24 hours with a fair, no-obligation cash offer that you can count on.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">3</div>
+                    <h3>Close On Your Timeline</h3>
+                    <p>Accept our offer and choose your closing date. We can close in as little as 7 days or whenever you're ready to move.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section light">
+        <div class="container">
+            <div class="two-columns">
+                <div class="column">
+                    <h2 class="column-title">Start your sale with an offer in hand</h2>
+                    <p class="column-text">Skip the work with a cash offer from USHomeBuyers. Or list for more and use our offer as a backup plan. The choice is yours, but you'll always have certainty.</p>
+                    <a href="#" class="cta-offer-btn" id="offerCta">Get Offer</a>
+                </div>
+                <div class="column">
+                    <div class="image-container">
+                        <img src="images/selling-process.jpg" alt="Selling Process">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section" id="benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Sell Your Home to Us</h2>
+                <p class="section-subtitle">Skip the stress and uncertainty of traditional home selling</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-number">$0</div>
+                    <h3>No Repairs Needed</h3>
+                    <p>We buy homes in any condition. Save thousands on repairs and renovations that traditional buyers might request.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-number">0%</div>
+                    <h3>No Commissions or Fees</h3>
+                    <p>Avoid paying 6% realtor commissions and other closing costs. Our offer is the amount you'll receive.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-number">7</div>
+                    <h3>Close in Days, Not Months</h3>
+                    <p>We can close in as few as 7 days, compared to 60-90 days with traditional sales. You decide the timeline.</p>
+                </div>
+            </div>
+            
+            <div class="two-columns">
+                <div class="column">
+                    <div class="image-container">
+                        <img src="images/cash-offer.jpg" alt="Cash Offer Process">
+                    </div>
+                </div>
+                <div class="column">
+                    <h2 class="column-title">Cash offer</h2>
+                    <p class="column-text">Get a competitive cash offer with no obligation. We make it simple to understand your home's value and provide you with flexibility and certainty that traditional selling can't match.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Enhanced Map Section - MUCH MORE ZOOMED IN, More Transparent, Statewide Coverage -->
+    <section class="map-section">
+        <div class="map-container">
+            <div id="serviceMap"></div>
+            
+            <div class="map-overlay">
+                <h2 class="map-title">Over 10 Years</h2>
+                <h3 class="map-subtitle">and counting</h3>
+                <p class="map-description">We offer top dollar deals for our clients throughout Arizona.<br>Get an offer from USHomeBuyers.</p>
+                <a href="#" class="map-cta-button">Get cash offer</a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section light" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-subtitle">Real stories from homeowners who chose USHomeBuyers</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "I needed to sell my house quickly after accepting a job offer in another state. USHomeBuyers made me a fair offer and we closed in just 10 days. The process was completely hassle-free!"
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">ML</div>
+                        <div class="author-info">
+                            <h4>Michael L.</h4>
+                            <p>Columbus, OH</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "After inheriting my parents' home, I was overwhelmed with the needed repairs and maintenance. USHomeBuyers purchased the property as-is and took care of everything. I couldn't be happier with the service I received."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SC</div>
+                        <div class="author-info">
+                            <h4>Sarah C.</h4>
+                            <p>Phoenix, AZ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "I was facing foreclosure and needed to sell quickly. USHomeBuyers stepped in and saved the day with a fair cash offer that allowed me to pay off my mortgage and move on with my life. Thank you!"
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JD</div>
+                        <div class="author-info">
+                            <h4>James D.</h4>
+                            <p>Atlanta, GA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Get answers to common questions about selling your home for cash</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How does the cash offer process work?</span>
+                        <span class="toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>After you submit your information, we'll analyze your property and reach out within 24 hours with a fair cash offer. If you accept, we'll schedule a quick walkthrough, then proceed to closing on your timeline. The entire process can be completed in as little as 7 days.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do I need to make any repairs before selling?</span>
+                        <span class="toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No, we buy homes in any condition. You don't need to make any repairs, clean, or even remove unwanted items. We'll handle everything after the purchase.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Are there any fees or commissions?</span>
+                        <span class="toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>None at all. When we make an offer, that's the amount you'll receive at closing. We cover all closing costs, and there are no real estate agent commissions.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How quickly can I sell my house?</span>
+                        <span class="toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We can close in as little as 7 days, or on your timeline. You choose the closing date that works best for your situation.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Is your cash offer guaranteed?</span>
+                        <span class="toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, our offers are guaranteed with no financing contingencies. When we make an offer, we have the funds ready to purchase your home.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">Ready to Get Your Cash Offer?</h2>
+            <p class="cta-text">Skip the stress, repairs, and months of uncertainty. Get a fair cash offer for your home and close on your timeline.</p>
+            <a href="#" class="cta-button" id="scrollToTop">Get Started Now</a>
+        </div>
+    </section>
+    
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>USHomeBuyers</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Process</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Sell Your Home</h3>
+                    <ul>
+                        <li><a href="#">Get Cash Offer</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Compare Options</a></li>
+                        <li><a href="#">Customer Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Home Value Calculator</a></li>
+                        <li><a href="#">Selling Guide</a></li>
+                        <li><a href="blogs.html">Blog</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><a href="tel:+16239200414">(623) 920-0414</a></li>
+                        <li><a href="mailto:offer@ushomebuyers.com">offer@ushomebuyers.com</a></li>
+                        <li>9393 N 90th St Unit 102-333<br>Scottsdale, AZ 85258</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>© 2025 USHomeBuyers. All rights reserved.</div>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Contact Modal -->
+    <div class="modal" id="contactModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeContactModal">×</span>
+            
+            <div class="contact-modal-header">
+                <h3>Contact Us</h3>
+                <p>We're here to help you sell your home fast</p>
+            </div>
+
+            <div class="contact-info-section">
+                <a href="tel:+16239200414" class="contact-call-now">
+                    <span class="contact-phone-icon">📞</span>
+                    (623) 920-0414
+                </a>
+
+                <div class="contact-divider">
+                    <span>OR REACH US BY</span>
+                </div>
+
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-item-icon">✉️</div>
+                        <div class="contact-item-content">
+                            <div class="contact-item-label">Email</div>
+                            <div class="contact-item-value">
+                                <a href="mailto:offer@ushomebuyers.com">offer@ushomebuyers.com</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-item-icon">📍</div>
+                        <div class="contact-item-content">
+                            <div class="contact-item-label">Address</div>
+                            <div class="contact-item-value">
+                                9393 N 90th St Unit 102-333<br>
+                                Scottsdale, AZ 85258
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-item-icon">🕐</div>
+                        <div class="contact-item-content">
+                            <div class="contact-item-label">Hours</div>
+                            <div class="contact-item-value">
+                                Mon-Fri: 8am - 8pm<br>
+                                Sat-Sun: 9am - 5pm
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Offer Form Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <span class="close-modal">×</span>
+            
+            <div class="modal-progress">
+                <div class="modal-step active" id="modalStep1"></div>
+                <div class="modal-step" id="modalStep2"></div>
+                <div class="modal-step" id="modalStep3"></div>
+                <div class="modal-step" id="modalStep4"></div>
+                <div class="modal-step" id="modalStep5"></div>
+                <div class="modal-step" id="modalStep6"></div>
+                <div class="modal-progress-line">
+                    <div class="modal-progress-fill" id="modalProgressFill"></div>
+                </div>
+            </div>
+            
+            <div class="modal-form-step active" id="modalFormStep1">
+                <div class="modal-header">
+                    <h3>How would you describe your property condition?</h3>
+                    <p>This helps us provide you with a more accurate offer.</p>
+                </div>
+                
+                <div class="radio-options">
+                    <div class="radio-option">
+                        <input type="radio" id="condition-great" name="property-condition" value="Great">
+                        <label for="condition-great">Great</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="condition-good" name="property-condition" value="Good">
+                        <label for="condition-good">Good</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="condition-fair" name="property-condition" value="Fair">
+                        <label for="condition-fair">Fair</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="condition-poor" name="property-condition" value="Poor">
+                        <label for="condition-poor">Poor</label>
+                    </div>
+                </div>
+                
+                <div class="modal-nav-buttons">
+                    <button type="button" class="modal-next-btn" id="step1Next">Next</button>
+                </div>
+            </div>
+            
+            <div class="modal-form-step" id="modalFormStep2">
+                <div class="modal-header">
+                    <h3>Is your home currently listed on the market?</h3>
+                    <p>Please let us know if your property is already listed with a real estate agent.</p>
+                </div>
+                
+                <div class="radio-options">
+                    <div class="radio-option">
+                        <input type="radio" id="listed-yes" name="home-listed" value="Yes">
+                        <label for="listed-yes">Yes</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="listed-no" name="home-listed" value="No">
+                        <label for="listed-no">No</label>
+                    </div>
+                </div>
+                
+                <div class="modal-nav-buttons">
+                    <button type="button" class="modal-prev-btn" id="step2Prev">Back</button>
+                    <button type="button" class="modal-next-btn" id="step2Next">Next</button>
+                </div>
+            </div>
+            
+            <div class="modal-form-step" id="modalFormStep3">
+                <div class="modal-header">
+                    <h3>What is your selling timeline?</h3>
+                    <p>Let us know when you'd ideally like to sell your property.</p>
+                </div>
+                
+                <div class="radio-options">
+                    <div class="radio-option">
+                        <input type="radio" id="timeline-immediate" name="selling-timeline" value="Immediate">
+                        <label for="timeline-immediate">ASAP (7-14 days)</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="timeline-30days" name="selling-timeline" value="30days">
+                        <label for="timeline-30days">Within 30 days</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="timeline-60days" name="selling-timeline" value="60days">
+                        <label for="timeline-60days">Within 60 days</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="timeline-flexible" name="selling-timeline" value="Flexible">
+                        <label for="timeline-flexible">Flexible</label>
+                    </div>
+                </div>
+                
+                <div class="modal-nav-buttons">
+                    <button type="button" class="modal-prev-btn" id="step3Prev">Back</button>
+                    <button type="button" class="modal-next-btn" id="step3Next">Next</button>
+                </div>
+            </div>
+            
+            <div class="modal-form-step" id="modalFormStep4">
+                <div class="modal-header">
+                    <h3>What is your first and last name?</h3>
+                    <p>We'll use this to personalize your offer.</p>
+                </div>
+                
+                <div class="form-group">
+                    <input type="text" id="fullName" class="form-control" placeholder="Enter your first and last name">
+                </div>
+                
+                <div class="modal-nav-buttons">
+                    <button type="button" class="modal-prev-btn" id="step4Prev">Back</button>
+                    <button type="button" class="modal-next-btn" id="step4Next">Next</button>
+                </div>
+            </div>
+            
+            <div class="modal-form-step" id="modalFormStep5">
+                <div class="modal-header">
+                    <h3>What is your email address?</h3>
+                    <p>We'll send your offer details to this email.</p>
+                </div>
+                
+                <div class="form-group">
+                    <input type="email" id="emailAddress" class="form-control" placeholder="Enter your email address">
+                </div>
+                
+                <div class="modal-nav-buttons">
+                    <button type="button" class="modal-prev-btn" id="step5Prev">Back</button>
+                    <button type="button" class="modal-submit-btn" id="finalSubmit">Submit</button>
+                </div>
+            </div>
+            
+            <div class="modal-form-step" id="modalFormStep6">
+                <div class="success-step">
+                    <div class="success-icon">✓</div>
+                    <h4>Thank You!</h4>
+                    <p>We've received your information and will contact you within 24 hours with your personalized cash offer.</p>
+                    <p style="margin-top: 20px; font-weight: 600;">What happens next?</p>
+                    <p style="margin-top: 10px;">One of our home specialists will analyze your property details and prepare your no-obligation cash offer.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function handleGoogleMapsError() {
+            console.error("Failed to load Google Maps API");
+            const errorMessage = document.getElementById('errorMessage');
+            if (errorMessage) {
+                errorMessage.textContent = "Some features may not work correctly. Please refresh the page or try again later.";
+                errorMessage.style.display = 'block';
+                setTimeout(() => {
+                    errorMessage.style.display = 'none';
+                }, 5000);
+            }
+        }
+        
+        // Initialize Google Maps with EXTREME zoom on central Phoenix and statewide coverage
+        let serviceMapInstance;
+        let allInfoWindows = [];
+        let allMarkers = [];
+        let animationInterval;
+        
+        function initMap() {
+            try {
+                console.log("Google Maps API loaded");
+                setupLegacyAutocomplete();
+                initServiceMap();
+            } catch (error) {
+                console.error("Error initializing Google Maps:", error);
+                handleGoogleMapsError();
+            }
+        }
+        
+        function initServiceMap() {
+            // Center on Downtown Phoenix with EXTREME zoom - street level detail
+            const center = { lat: 33.4484, lng: -112.0740 };
+            
+            const mapElement = document.getElementById('serviceMap');
+            if (!mapElement) {
+                console.error("Map element not found");
+                return;
+            }
+            
+            // Create map with enhanced darker styling and EXTREME initial zoom
+            serviceMapInstance = new google.maps.Map(mapElement, {
+                zoom: 14, // Increased from 12 to 14 for MUCH closer, street-level view
+                center: center,
+                styles: [
+                    {
+                        "featureType": "all",
+                        "elementType": "geometry",
+                        "stylers": [{"color": "#0f1419"}]
+                    },
+                    {
+                        "featureType": "all",
+                        "elementType": "labels.text.stroke",
+                        "stylers": [{"lightness": -95}]
+                    },
+                    {
+                        "featureType": "all",
+                        "elementType": "labels.text.fill",
+                        "stylers": [{"color": "#7a8a9e"}]
+                    },
+                    {
+                        "featureType": "administrative",
+                        "elementType": "labels.text.fill",
+                        "stylers": [{"color": "#4a5568"}]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "labels.text.fill",
+                        "stylers": [{"color": "#3a4556"}]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "geometry.fill",
+                        "stylers": [{"color": "#1a2332"}]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "labels.text.fill",
+                        "stylers": [{"color": "#5a6a7e"}]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "geometry",
+                        "stylers": [{"color": "#000508"}]
+                    }
+                ],
+                disableDefaultUI: true,
+                zoomControl: true,
+                gestureHandling: 'cooperative'
+            });
+            
+            // EXPANDED markers - Phoenix Metro + Tucson + Flagstaff + Yuma + Statewide Coverage
+            const markersData = [
+                // Phoenix Metro Area (closer spacing for zoomed view)
+                { position: { lat: 33.5146, lng: -112.0426 }, price: "$675K", label: "Arcadia", deal: "Premium" },
+                { position: { lat: 33.4284, lng: -112.0740 }, price: "$528K", label: "Downtown", deal: "Fast" },
+                { position: { lat: 33.4484, lng: -112.0290 }, price: "$495K", label: "Midtown", deal: "Deal" },
+                { position: { lat: 33.3895, lng: -112.1401 }, price: "$412K", label: "Laveen", deal: "Top Offer" },
+                { position: { lat: 33.5022, lng: -112.1374 }, price: "$548K", label: "North Central", deal: "Closed" },
+                { position: { lat: 33.4152, lng: -112.0115 }, price: "$462K", label: "Central City", deal: "Sold" },
+                { position: { lat: 33.3478, lng: -112.0490 }, price: "$385K", label: "South Phoenix", deal: "Quick" },
+                { position: { lat: 33.4784, lng: -111.9910 }, price: "$595K", label: "Paradise Valley", deal: "Hot" },
+                { position: { lat: 33.5569, lng: -112.0826 }, price: "$448K", label: "Deer Valley", deal: "Best" },
+                { position: { lat: 33.3662, lng: -112.1197 }, price: "$341K", label: "Maryvale", deal: "Value" },
+                
+                // Scottsdale
+                { position: { lat: 33.4942, lng: -111.9261 }, price: "$722K", label: "Scottsdale", deal: "Luxury" },
+                { position: { lat: 33.6095, lng: -111.8879 }, price: "$815K", label: "North Scottsdale", deal: "Elite" },
+                
+                // Tempe & Mesa
+                { position: { lat: 33.4255, lng: -111.9400 }, price: "$425K", label: "Tempe", deal: "Smart" },
+                { position: { lat: 33.4152, lng: -111.8315 }, price: "$395K", label: "Mesa", deal: "Quick" },
+                
+                // Chandler & Gilbert
+                { position: { lat: 33.3062, lng: -111.8413 }, price: "$485K", label: "Chandler", deal: "Top" },
+                { position: { lat: 33.3528, lng: -111.7890 }, price: "$495K", label: "Gilbert", deal: "Exclusive" },
+                
+                // Glendale & Peoria
+                { position: { lat: 33.5387, lng: -112.1859 }, price: "$395K", label: "Glendale", deal: "Fair" },
+                { position: { lat: 33.5806, lng: -112.2374 }, price: "$475K", label: "Peoria", deal: "Fresh" },
+                
+                // Surprise & Goodyear
+                { position: { lat: 33.6294, lng: -112.3679 }, price: "$425K", label: "Surprise", deal: "Solid" },
+                { position: { lat: 33.4353, lng: -112.3584 }, price: "$445K", label: "Goodyear", deal: "Great" },
+                
+                // Tucson Area
+                { position: { lat: 32.2226, lng: -110.9747 }, price: "$325K", label: "Tucson", deal: "Top Deal" },
+                { position: { lat: 32.3185, lng: -110.9744 }, price: "$355K", label: "Oro Valley", deal: "Gem" },
+                { position: { lat: 32.1693, lng: -110.8787 }, price: "$285K", label: "Vail", deal: "Value" },
+                { position: { lat: 32.1382, lng: -110.9558 }, price: "$295K", label: "South Tucson", deal: "Budget" },
+                
+                // Flagstaff Area
+                { position: { lat: 35.1983, lng: -111.6513 }, price: "$485K", label: "Flagstaff", deal: "Mountain" },
+                { position: { lat: 34.8697, lng: -111.7610 }, price: "$395K", label: "Sedona", deal: "Scenic" },
+                
+                // Yuma Area
+                { position: { lat: 32.6927, lng: -114.6277 }, price: "$265K", label: "Yuma", deal: "Hot Market" },
+                
+                // Prescott Area
+                { position: { lat: 34.5400, lng: -112.4685 }, price: "$445K", label: "Prescott", deal: "Classic" },
+                { position: { lat: 34.5947, lng: -112.4530 }, price: "$425K", label: "Prescott Valley", deal: "Strong" },
+                
+                // Lake Havasu & Kingman
+                { position: { lat: 34.4839, lng: -114.3224 }, price: "$385K", label: "Lake Havasu", deal: "Lakefront" },
+                { position: { lat: 35.1894, lng: -114.0530 }, price: "$245K", label: "Kingman", deal: "Bargain" },
+                
+                // Casa Grande & Maricopa
+                { position: { lat: 32.8795, lng: -111.7573 }, price: "$295K", label: "Casa Grande", deal: "Growing" },
+                { position: { lat: 33.0581, lng: -112.0476 }, price: "$335K", label: "Maricopa", deal: "New" },
+                
+                // Apache Junction & Queen Creek
+                { position: { lat: 33.4150, lng: -111.5496 }, price: "$315K", label: "Apache Junction", deal: "Scenic" },
+                { position: { lat: 33.2487, lng: -111.6343 }, price: "$465K", label: "Queen Creek", deal: "Modern" }
+            ];
+            
+            markersData.forEach((markerData, index) => {
+                // Create sleek custom marker
+                const marker = new google.maps.Marker({
+                    position: markerData.position,
+                    map: serviceMapInstance,
+                    icon: {
+                        path: google.maps.SymbolPath.CIRCLE,
+                        scale: 13,
+                        fillColor: "#4285f4",
+                        fillOpacity: 1,
+                        strokeColor: "#ffffff",
+                        strokeWeight: 2.5
+                    },
+                    animation: google.maps.Animation.DROP,
+                    zIndex: 100 + index
+                });
+                
+                allMarkers.push(marker);
+                
+                // Create premium info window with single descriptive word
+                const infoWindow = new google.maps.InfoWindow({
+                    content: `
+                        <div class="custom-info-window">
+                            <div class="price">${markerData.price}</div>
+                            <div class="label">${markerData.label}</div>
+                            <div class="deal-badge">${markerData.deal}</div>
+                        </div>
+                    `,
+                    disableAutoPan: false
+                });
+                
+                allInfoWindows.push(infoWindow);
+                
+                // Add click listener
+                marker.addListener('click', () => {
+                    allInfoWindows.forEach(iw => iw.close());
+                    infoWindow.open(serviceMapInstance, marker);
+                });
+                
+                // Add subtle hover effect
+                marker.addListener('mouseover', () => {
+                    marker.setIcon({
+                        path: google.maps.SymbolPath.CIRCLE,
+                        scale: 15,
+                        fillColor: "#2a75f3",
+                        fillOpacity: 1,
+                        strokeColor: "#ffffff",
+                        strokeWeight: 3
+                    });
+                });
+                
+                marker.addListener('mouseout', () => {
+                    marker.setIcon({
+                        path: google.maps.SymbolPath.CIRCLE,
+                        scale: 13,
+                        fillColor: "#4285f4",
+                        fillOpacity: 1,
+                        strokeColor: "#ffffff",
+                        strokeWeight: 2.5
+                    });
+                });
+            });
+            
+            // Start the animation cycle
+            startBubbleAnimation();
+        }
+        
+        function startBubbleAnimation() {
+            let visibleIndices = new Set();
+            
+            // Initially show 4-6 random bubbles
+            for (let i = 0; i < 5; i++) {
+                const randomIndex = Math.floor(Math.random() * allInfoWindows.length);
+                visibleIndices.add(randomIndex);
+                allInfoWindows[randomIndex].open(serviceMapInstance, allMarkers[randomIndex]);
+            }
+            
+            // Animate bubbles appearing and disappearing
+            animationInterval = setInterval(() => {
+                // Randomly decide to show or hide a bubble
+                const action = Math.random() > 0.5 ? 'show' : 'hide';
+                
+                if (action === 'show' && visibleIndices.size < 8) {
+                    // Find a hidden bubble to show
+                    let attempts = 0;
+                    while (attempts < 20) {
+                        const randomIndex = Math.floor(Math.random() * allInfoWindows.length);
+                        if (!visibleIndices.has(randomIndex)) {
+                            visibleIndices.add(randomIndex);
+                            allInfoWindows[randomIndex].open(serviceMapInstance, allMarkers[randomIndex]);
+                            break;
+                        }
+                        attempts++;
+                    }
+                } else if (action === 'hide' && visibleIndices.size > 3) {
+                    // Hide a random visible bubble
+                    const visibleArray = Array.from(visibleIndices);
+                    const randomVisible = visibleArray[Math.floor(Math.random() * visibleArray.length)];
+                    visibleIndices.delete(randomVisible);
+                    allInfoWindows[randomVisible].close();
+                }
+            }, 700); // Every 0.7 seconds
+        }
+        
+        function updateURLPath(path) {
+            if (window.location.protocol === 'file:') {
+                console.log('Local file detected, storing virtual path:', path);
+                sessionStorage.setItem('currentVirtualPath', path);
+                return false;
+            }
+            
+            try {
+                console.log('Updating URL path to:', path);
+                
+                if (window.location.origin !== 'null' && 
+                    !window.location.href.includes('about:srcdoc')) {
+                    
+                    window.history.pushState({page: path}, '', path);
+                    
+                    if (typeof gtag !== 'undefined') {
+                        gtag('config', 'AW-11426860405', {
+                            'page_path': path
+                        });
+                    }
+                    
+                    console.log('URL updated to:', path);
+                } else {
+                    console.log('Skipping URL update in special environment');
+                    sessionStorage.setItem('currentVirtualPath', path);
+                }
+                
+                return true;
+            } catch (error) {
+                console.error('Error updating URL path:', error);
+                sessionStorage.setItem('currentVirtualPath', path);
+                return false;
+            }
+        }
+        
+        function goToStep2() {
+            console.log("goToStep2 function called directly");
+            
+            const addressInput = document.getElementById('addressInput');
+            const step1 = document.getElementById('step1');
+            const step2 = document.getElementById('step2');
+            const stepTitle = document.getElementById('stepTitle');
+            const progressSteps = document.querySelectorAll('.progress-step');
+            const progressLineFill = document.querySelector('.progress-line-fill');
+            
+            if (!addressInput || !step1 || !step2 || !stepTitle) {
+                console.error("Critical elements missing");
+                return;
+            }
+            
+            const address = addressInput.value;
+            if (!address || address.trim() === '') {
+                alert('Please enter your property address');
+                return;
+            }
+            
+            window.formData = window.formData || {};
+            window.formData.address = address;
+            
+            updateURLPath('/form1-step2');
+            
+            step1.classList.add('hidden');
+            step2.classList.remove('hidden');
+            
+            if (progressSteps && progressSteps.length >= 2) {
+                progressSteps[0].classList.remove('active');
+                progressSteps[0].classList.add('completed');
+                progressSteps[1].classList.add('active');
+            }
+            
+            if (progressLineFill) {
+                progressLineFill.style.width = '100%';
+            }
+            
+            stepTitle.textContent = 'Enter Your Phone Number';
+            
+            console.log("Form advanced to step 2 successfully");
+        }
+
+        function scrollToAddressInput() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+            
+            setTimeout(() => {
+                const addressInput = document.getElementById('addressInput');
+                if (addressInput) {
+                    addressInput.focus();
+                }
+            }, 800);
+        }
+        
+        let autocompleteInitialized = false;
+        
+        const initialZapierWebhookUrl = 'https://hooks.zapier.com/hooks/catch/16268725/u2tkwpq/';
+        const completeZapierWebhookUrl = 'https://hooks.zapier.com/hooks/catch/16268725/u2taind/';
+        
+        let formData = {
+            address: '',
+            phone: '',
+            condition: '',
+            homeListed: '',
+            timeline: '',
+            fullName: '',
+            email: ''
+        };
+        
+        function setupLegacyAutocomplete() {
+            try {
+                const input = document.getElementById('addressInput');
+                
+                if (!input) {
+                    console.warn("Address input field not found");
+                    return;
+                }
+                
+                const autocomplete = new google.maps.places.Autocomplete(input, {
+                    types: ['address'],
+                    componentRestrictions: { country: 'us' }
+                });
+                
+                autocomplete.addListener('place_changed', function() {
+                    const place = autocomplete.getPlace();
+                    console.log("Place selected:", place);
+                    
+                    if (place && place.formatted_address) {
+                        input.value = place.formatted_address;
+                    }
+                });
+                
+                autocompleteInitialized = true;
+                console.log("Autocomplete successfully initialized");
+            } catch (error) {
+                console.error("Error setting up Autocomplete:", error);
+                const addressInput = document.getElementById('addressInput');
+                if (addressInput) {
+                    addressInput.setAttribute('placeholder', 'Enter your property address (e.g. 123 Main St, City, State)');
+                }
+            }
+        }
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log("DOM fully loaded");
+
+            // Contact Modal functionality
+            const contactModal = document.getElementById('contactModal');
+            const contactNavLink = document.getElementById('contactNavLink');
+            const closeContactModal = document.getElementById('closeContactModal');
+
+            if (contactNavLink && contactModal) {
+                contactNavLink.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    contactModal.style.display = 'flex';
+                });
+            }
+
+            if (closeContactModal && contactModal) {
+                closeContactModal.addEventListener('click', function() {
+                    contactModal.style.display = 'none';
+                });
+            }
+
+            if (contactModal) {
+                window.addEventListener('click', function(e) {
+                    if (e.target === contactModal) {
+                        contactModal.style.display = 'none';
+                    }
+                });
+            }
+
+            const stickyToolbar = document.getElementById('stickyToolbar');
+            const stickyOfferBtn = document.getElementById('stickyOfferBtn');
+            const heroSection = document.querySelector('.hero');
+            let heroHeight = 0;
+            
+            if (heroSection) {
+                heroHeight = heroSection.offsetHeight;
+            }
+            
+            window.addEventListener('scroll', function() {
+                if (stickyToolbar) {
+                    if (window.scrollY > heroHeight) {
+                        stickyToolbar.classList.add('visible');
+                    } else {
+                        stickyToolbar.classList.remove('visible');
+                    }
+                }
+            });
+            
+            if (stickyOfferBtn) {
+                stickyOfferBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    scrollToAddressInput();
+                });
+            }
+            
+            const step1 = document.getElementById('step1');
+            const step2 = document.getElementById('step2');
+            const addressBtn = document.getElementById('addressBtn');
+            const stepTitle = document.getElementById('stepTitle');
+            const progressSteps = document.querySelectorAll('.progress-step');
+            const progressLineFill = document.querySelector('.progress-line-fill');
+            const offerForm = document.getElementById('offerForm');
+            const successModal = document.getElementById('successModal');
+            const closeModal = document.querySelector('.close-modal');
+            
+            console.log("Key elements:", {
+                step1: step1,
+                step2: step2,
+                addressBtn: addressBtn,
+                stepTitle: stepTitle,
+                progressStepsCount: progressSteps ? progressSteps.length : 'not found',
+                progressLineFill: progressLineFill,
+                offerForm: offerForm,
+                successModal: successModal,
+                closeModal: closeModal
+            });
+            
+            if (addressBtn) {
+                if (!addressBtn.hasAttribute('onclick')) {
+                    addressBtn.setAttribute('onclick', 'goToStep2()');
+                }
+                
+                addressBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    goToStep2();
+                });
+            }
+            
+            const slideshow = document.getElementById('heroSlideshow');
+            if (slideshow) {
+                const slides = slideshow.querySelectorAll('.slide');
+                const dots = slideshow.querySelectorAll('.dot');
+                
+                if (slides.length > 0 && dots.length > 0) {
+                    let currentSlide = 0;
+                    let slideInterval = setInterval(nextSlide, 5000);
+                    
+                    function showSlide(index) {
+                        slides.forEach(slide => {
+                            slide.classList.remove('active');
+                        });
+                        
+                        dots.forEach(dot => {
+                            dot.classList.remove('active');
+                        });
+                        
+                        slides[index].classList.add('active');
+                        dots[index].classList.add('active');
+                        
+                        currentSlide = index;
+                    }
+                    
+                    function nextSlide() {
+                        let next = currentSlide + 1;
+                        if (next >= slides.length) {
+                            next = 0;
+                        }
+                        showSlide(next);
+                    }
+                    
+                    dots.forEach(dot => {
+                        dot.addEventListener('click', function() {
+                            const slideIndex = parseInt(this.getAttribute('data-slide'));
+                            
+                            clearInterval(slideInterval);
+                            showSlide(slideIndex);
+                            
+                            slideInterval = setInterval(nextSlide, 5000);
+                        });
+                    });
+                    
+                    slideshow.addEventListener('mouseenter', function() {
+                        clearInterval(slideInterval);
+                    });
+                    
+                    slideshow.addEventListener('mouseleave', function() {
+                        slideInterval = setInterval(nextSlide, 5000);
+                    });
+                }
+            }
+            
+            const mapCtaButton = document.querySelector('.map-cta-button');
+            if (mapCtaButton) {
+                mapCtaButton.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    scrollToAddressInput();
+                });
+            }
+            
+            const offerCta = document.getElementById('offerCta');
+            if (offerCta) {
+                offerCta.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    scrollToAddressInput();
+                    
+                    updateURLPath('/get-offer-clicked');
+                });
+            }
+            
+            const mobileToggle = document.querySelector('.mobile-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            
+            if (mobileToggle && navLinks) {
+                mobileToggle.addEventListener('click', function() {
+                    navLinks.classList.toggle('active');
+                });
+            }
+            
+            if (offerForm && successModal) {
+                offerForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    console.log("Form submitted");
+                    
+                    const addressInput = document.getElementById('addressInput');
+                    const phoneInput = document.getElementById('phone');
+                    
+                    if (!addressInput || !phoneInput) {
+                        console.error("Form inputs not found");
+                        return;
+                    }
+                    
+                    const address = addressInput.value;
+                    const phone = phoneInput.value;
+                    
+                    console.log("Form values - Address:", address, "Phone:", phone);
+                    
+                    if (address.trim().length < 5) {
+                        alert('Please enter a valid property address');
+                        return;
+                    }
+                    
+                    if (!validatePhone(phone)) {
+                        alert('Please enter a valid 10-digit phone number');
+                        return;
+                    }
+                    
+                    formData.address = address;
+                    formData.phone = phone;
+                    
+                    const initialFormData = new FormData();
+                    initialFormData.append('address', address);
+                    initialFormData.append('phone', phone);
+                    initialFormData.append('source', 'Initial Form');
+                    
+                    console.log("Sending initial lead data to Zapier - Address:", address, "Phone:", phone);
+                    
+                    try {
+                        fetch(initialZapierWebhookUrl, {
+                            method: 'POST',
+                            body: initialFormData
+                        })
+                        .then(response => {
+                            console.log("Zapier initial response status:", response.status);
+                            return response.text();
+                        })
+                        .then(data => {
+                            console.log("Zapier initial response:", data);
+                            console.log("Initial lead successfully submitted to Zapier");
+                            
+                            updateURLPath('/form1-submitted');
+                            
+                            resetModalForm();
+                            successModal.style.display = 'flex';
+                            
+                            updateURLPath('/form2-step1');
+                            
+                            setTimeout(() => {
+                                offerForm.reset();
+                                if (step1 && step2 && progressSteps.length >= 2 && stepTitle && progressLineFill) {
+                                    step1.classList.remove('hidden');
+                                    step2.classList.add('hidden');
+                                    progressSteps[0].classList.add('active');
+                                    progressSteps[0].classList.remove('completed');
+                                    progressSteps[1].classList.remove('active');
+                                    progressLineFill.style.width = '0%';
+                                    stepTitle.textContent = 'Enter Your Property Address';
+                                }
+                            }, 500);
+                        })
+                        .catch(error => {
+                            console.error("Error sending data to Zapier:", error);
+                            
+                            resetModalForm();
+                            successModal.style.display = 'flex';
+                            
+                            updateURLPath('/form2-step1');
+                        });
+                    } catch (error) {
+                        console.error("Error with form submission:", error);
+                        resetModalForm();
+                        successModal.style.display = 'flex';
+                        updateURLPath('/form2-step1');
+                    }
+                });
+            }
+            
+            const modalSteps = document.querySelectorAll('.modal-step');
+            const modalFormSteps = document.querySelectorAll('.modal-form-step');
+            const modalProgressFill = document.getElementById('modalProgressFill');
+            
+            if (modalSteps.length > 0 && modalFormSteps.length > 0 && modalProgressFill) {
+                const step1Next = document.getElementById('step1Next');
+                if (step1Next) {
+                    step1Next.addEventListener('click', function() {
+                        if (!document.querySelector('input[name="property-condition"]:checked')) {
+                            alert('Please select a property condition');
+                            return;
+                        }
+                        
+                        formData.condition = document.querySelector('input[name="property-condition"]:checked').value;
+                        
+                        updateURLPath('/form2-step2');
+                        
+                        goToModalStep(2);
+                    });
+                }
+                
+                const step2Prev = document.getElementById('step2Prev');
+                const step2Next = document.getElementById('step2Next');
+                
+                if (step2Prev) {
+                    step2Prev.addEventListener('click', function() {
+                        updateURLPath('/form2-step1');
+                        goToModalStep(1);
+                    });
+                }
+                
+                if (step2Next) {
+                    step2Next.addEventListener('click', function() {
+                        if (!document.querySelector('input[name="home-listed"]:checked')) {
+                            alert('Please indicate if your home is currently listed');
+                            return;
+                        }
+                        
+                        formData.homeListed = document.querySelector('input[name="home-listed"]:checked').value;
+                        
+                        updateURLPath('/form2-step3');
+                        
+                        goToModalStep(3);
+                    });
+                }
+                
+                const step3Prev = document.getElementById('step3Prev');
+                const step3Next = document.getElementById('step3Next');
+                
+                if (step3Prev) {
+                    step3Prev.addEventListener('click', function() {
+                        updateURLPath('/form2-step2');
+                        goToModalStep(2);
+                    });
+                }
+                
+                if (step3Next) {
+                    step3Next.addEventListener('click', function() {
+                        if (!document.querySelector('input[name="selling-timeline"]:checked')) {
+                            alert('Please select a selling timeline');
+                            return;
+                        }
+                        
+                        formData.timeline = document.querySelector('input[name="selling-timeline"]:checked').value;
+                        
+                        updateURLPath('/form2-step4');
+                        
+                        goToModalStep(4);
+                    });
+                }
+                
+                const step4Prev = document.getElementById('step4Prev');
+                const step4Next = document.getElementById('step4Next');
+                
+                if (step4Prev) {
+                    step4Prev.addEventListener('click', function() {
+                        updateURLPath('/form2-step3');
+                        goToModalStep(3);
+                    });
+                }
+                
+                if (step4Next) {
+                    step4Next.addEventListener('click', function() {
+                        const fullNameInput = document.getElementById('fullName');
+                        if (!fullNameInput || fullNameInput.value.trim() === '') {
+                            alert('Please enter your first and last name');
+                            return;
+                        }
+                        
+                        formData.fullName = fullNameInput.value.trim();
+                        
+                        updateURLPath('/form2-step5');
+                        
+                        goToModalStep(5);
+                    });
+                }
+                
+                const step5Prev = document.getElementById('step5Prev');
+                const finalSubmit = document.getElementById('finalSubmit');
+                
+                if (step5Prev) {
+                    step5Prev.addEventListener('click', function() {
+                        updateURLPath('/form2-step4');
+                        goToModalStep(4);
+                    });
+                }
+                
+                if (finalSubmit) {
+                    finalSubmit.addEventListener('click', function() {
+                        const emailInput = document.getElementById('emailAddress');
+                        if (!emailInput || !validateEmail(emailInput.value.trim())) {
+                            alert('Please enter a valid email address');
+                            return;
+                        }
+                        
+                        formData.email = emailInput.value.trim();
+                        
+                        const completeFormData = new FormData();
+                        completeFormData.append('address', formData.address);
+                        completeFormData.append('phone', formData.phone);
+                        completeFormData.append('condition', formData.condition);
+                        completeFormData.append('homeListed', formData.homeListed);
+                        completeFormData.append('timeline', formData.timeline);
+                        completeFormData.append('fullName', formData.fullName);
+                        completeFormData.append('email', formData.email);
+                        completeFormData.append('source', 'Complete Form');
+                        
+                        console.log("Sending complete lead data to Zapier:", formData);
+                        
+                        try {
+                            fetch(completeZapierWebhookUrl, {
+                                method: 'POST',
+                                body: completeFormData
+                            })
+                            .then(response => {
+                                console.log("Zapier complete response status:", response.status);
+                                return response.text();
+                            })
+                            .then(data => {
+                                console.log("Zapier complete response:", data);
+                                console.log("Complete lead successfully submitted to Zapier");
+                                
+                                updateURLPath('/form2-completed');
+                                
+                                goToModalStep(6);
+                            })
+                            .catch(error => {
+                                console.error("Error sending complete data to Zapier:", error);
+                                
+                                updateURLPath('/form2-completed');
+                                
+                                goToModalStep(6);
+                            });
+                        } catch (error) {
+                            console.error("Error with complete form submission:", error);
+                            updateURLPath('/form2-completed');
+                            goToModalStep(6);
+                        }
+                    });
+                }
+                
+                function goToModalStep(stepNumber) {
+                    if (!modalSteps || !modalFormSteps || !modalProgressFill) {
+                        console.error("Modal elements not found for step navigation");
+                        return;
+                    }
+                    
+                    try {
+                        modalSteps.forEach((step, index) => {
+                            if (index + 1 < stepNumber) {
+                                step.classList.add('completed');
+                                step.classList.remove('active');
+                            } else if (index + 1 === stepNumber) {
+                                step.classList.add('active');
+                                step.classList.remove('completed');
+                            } else {
+                                step.classList.remove('active', 'completed');
+                            }
+                        });
+                        
+                        const progressPercentage = (stepNumber - 1) / (modalSteps.length - 1) * 100;
+                        modalProgressFill.style.width = `${progressPercentage}%`;
+                        
+                        modalFormSteps.forEach((formStep, index) => {
+                            if (index + 1 === stepNumber) {
+                                formStep.classList.add('active');
+                            } else {
+                                formStep.classList.remove('active');
+                            }
+                        });
+                    } catch (error) {
+                        console.error("Error navigating modal steps:", error);
+                    }
+                }
+                
+                function resetModalForm() {
+                    try {
+                        document.querySelectorAll('input[type="radio"]').forEach(radio => {
+                            radio.checked = false;
+                        });
+                        
+                        const fullNameInput = document.getElementById('fullName');
+                        const emailInput = document.getElementById('emailAddress');
+                        
+                        if (fullNameInput) fullNameInput.value = '';
+                        if (emailInput) emailInput.value = '';
+                        
+                        goToModalStep(1);
+                    } catch (error) {
+                        console.error("Error resetting form:", error);
+                    }
+                }
+                
+                if (closeModal && successModal) {
+                    closeModal.addEventListener('click', function() {
+                        successModal.style.display = 'none';
+                        
+                        updateURLPath('/');
+                    });
+                }
+                
+                if (successModal) {
+                    window.addEventListener('click', function(e) {
+                        const modalFormStep6 = document.getElementById('modalFormStep6');
+                        
+                        if (e.target === successModal && (!modalFormStep6 || !modalFormStep6.classList.contains('active'))) {
+                            if (confirm('Are you sure you want to close this form? Your progress will be lost.')) {
+                                successModal.style.display = 'none';
+                                
+                                updateURLPath('/');
+                            }
+                        } else if (e.target === successModal) {
+                            successModal.style.display = 'none';
+                            
+                            updateURLPath('/');
+                        }
+                    });
+                }
+            } else {
+                console.error("Modal elements not found:", {
+                    modalSteps: modalSteps?.length,
+                    modalFormSteps: modalFormSteps?.length,
+                    modalProgressFill: !!modalProgressFill
+                });
+            }
+            
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                
+                if (question) {
+                    question.addEventListener('click', () => {
+                        const isActive = item.classList.contains('active');
+                        
+                        faqItems.forEach(faqItem => {
+                            faqItem.classList.remove('active');
+                            const toggle = faqItem.querySelector('.toggle');
+                            if (toggle) {
+                                toggle.textContent = '+';
+                            }
+                        });
+                        
+                        if (!isActive) {
+                            item.classList.add('active');
+                            const toggle = item.querySelector('.toggle');
+                            if (toggle) {
+                                toggle.textContent = '-';
+                            }
+                        }
+                    });
+                }
+            });
+            
+            const scrollToTopBtn = document.getElementById('scrollToTop');
+            if (scrollToTopBtn) {
+                scrollToTopBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    scrollToAddressInput();
+                });
+            }
+            
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const targetId = this.getAttribute('href');
+                    
+                    if (targetId === '#') return;
+                    
+                    e.preventDefault();
+                    
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 70,
+                            behavior: 'smooth'
+                        });
+                        
+                        if (navLinks) {
+                            navLinks.classList.remove('active');
+                        }
+                    }
+                });
+            });
+        });
+        
+        function validatePhone(phone) {
+            const digits = phone.replace(/\D/g, '');
+            
+            return digits.length === 10;
+        }
+        
+        function validateEmail(email) {
+            const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(String(email).toLowerCase());
+        }
+        
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                if (!autocompleteInitialized && typeof google === 'undefined') {
+                    console.warn("Google Maps API didn't load properly, using form without autocomplete");
+                    const addressInput = document.getElementById('addressInput');
+                    if (addressInput) {
+                        addressInput.setAttribute('placeholder', 'Enter your property address (e.g. 123 Main St, City, State)');
+                    }
+                }
+                
+                const addressBtn = document.getElementById('addressBtn');
+                if (addressBtn && !addressBtn.onclick) {
+                    console.log("Reattaching click handler to address button on load");
+                    addressBtn.onclick = goToStep2;
+                }
+            }, 1000);
+        });
+        
+        // Clean up animation on page unload
+        window.addEventListener('beforeunload', function() {
+            if (animationInterval) {
+                clearInterval(animationInterval);
+            }
+        });
+    </script>
+    
+    <script async="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAf4VeQ7zEFLl3DJRX9fNlB8MZZZXcwbXM&amp;libraries=places&amp;loading=async&amp;callback=initMap" onerror="handleGoogleMapsError()"></script>
+
+
+</body></html>
